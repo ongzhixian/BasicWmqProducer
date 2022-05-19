@@ -15,6 +15,7 @@ dotnet add .\BasicWmqProducer.ConsoleApp\ package Microsoft.Extensions.Configura
 dotnet add .\BasicWmqProducer.ConsoleApp\ package Microsoft.Extensions.Configuration.Json
 dotnet add .\BasicWmqProducer.ConsoleApp\ package Microsoft.Extensions.Configuration.UserSecrets
 
+dotnet add .\BasicWmqProducer.ConsoleApp\ package NLog
 dotnet add .\BasicWmqProducer.ConsoleApp\ package IBMXMSDotnetClient
 ```
 

@@ -1,9 +1,12 @@
 ﻿
 using IBM.XMS;
 using Microsoft.Extensions.Configuration;
+using NLog;
 using System.Reflection;
 
 const string APP_SETTINGS_CONFIGURATION_FILE = "appsettings.json";
+
+var logger = LogManager.GetCurrentClassLogger();
 
 // CONFIGURATION_KEYs
 
@@ -39,7 +42,7 @@ using (IMessageProducer? producer = sessionWMQ.CreateProducer(destination))
         textMessage.Text = "This is a simple message from XMS.NET producer";
         producer.Send(textMessage);
 
-        Console.WriteLine("Message sent.");
+        logger.Info("Message sent.");
 
         Thread.Sleep(3000);
     }

@@ -13,6 +13,7 @@ dotnet sln .\BasicWmqProducer.sln add .\BasicWmqProducer.ConsoleApp\
 
 dotnet add .\BasicWmqProducer.ConsoleApp\ package Microsoft.Extensions.Configuration
 dotnet add .\BasicWmqProducer.ConsoleApp\ package Microsoft.Extensions.Configuration.Json
+dotnet add .\BasicWmqProducer.ConsoleApp\ package Microsoft.Extensions.Configuration.UserSecrets
 
 dotnet add .\BasicWmqProducer.ConsoleApp\ package IBMXMSDotnetClient
 ```

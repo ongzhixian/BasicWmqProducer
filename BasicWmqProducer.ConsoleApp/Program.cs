@@ -39,6 +39,8 @@ using (IMessageProducer? producer = sessionWMQ.CreateProducer(destination))
         textMessage.Text = "This is a simple message from XMS.NET producer";
         producer.Send(textMessage);
 
+        Console.WriteLine("Message sent.");
+
         Thread.Sleep(3000);
     }
 }
